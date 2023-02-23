@@ -67,4 +67,4 @@ In general, the output of this reshape function should be the embeddings for the
 
  ----------------------------------------------------------------------------
  
- Contact: Vayne Xie (wxieai@cse.ust.hk)
+##  Contact: Vayne Xie (wxieai@cse.ust.hk) ##
