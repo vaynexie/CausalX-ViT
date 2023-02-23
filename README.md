@@ -31,6 +31,7 @@ ViT_CX.py: code for making explanation for an example instance.
 Noteworthy points:
 
 1. The hyperparameters in the main function: ViT_CX
+
 ```python
 
 def ViT_CX(model,image,target_layer,target_category=None,distance_threshold=0.1,reshape_function=reshape_function_vit,gpu_batch=50)
@@ -47,6 +48,7 @@ def ViT_CX(model,image,target_layer,target_category=None,distance_threshold=0.1,
 ```
 
 2. Hyperparameter: reshape_function 
+
 In ViT-CX, only the patch embeddings are used to make the explanation. The hyperparameter ''reshape_function'' is a function to discard the other token embeddings (like, [CLS] token and [DIST] token in DeiT) and reshape the patch embeddings in 1D into the original 2D position relationship. 
 
 This hyperparameter is in default to be a function for reshaping the embeddings from the vanilla ViT model: 
