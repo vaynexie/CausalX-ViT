@@ -30,19 +30,19 @@ ViT_CX.py: code for making explanation for an example instance.
 
 Noteworthy points:
 
-1.  The hyperparameters in the main function: ViT_CX
+1. The hyperparameters in the main function: ViT_CX
 ```python
 
 def ViT_CX(model,image,target_layer,target_category=None,distance_threshold=0.1,reshape_function=reshape_function_vit,gpu_batch=50)
 '''
-2. model: ViT model to be explained;
-3. image: input image in the tensor form (shape: [1,#channels,width,height]);
-4. target_layer: the layer to extract feature maps  (e.g. model.blocks[-1].norm1);
-5. target_category: int (class to be explained), in default - the top_1 prediction class;
-6. distance_threshold: float between [0,1], distance threshold to make the clustering where  
+1. model: ViT model to be explained;
+2. image: input image in the tensor form (shape: [1,#channels,width,height]);
+3. target_layer: the layer to extract feature maps  (e.g. model.blocks[-1].norm1);
+4. target_category: int (class to be explained), in default - the top_1 prediction class;
+5. distance_threshold: float between [0,1], distance threshold to make the clustering where  
    feature maps with pairwise similarity<distance_threshold will be merged together, in default - 0.1; 
-7. reshape_function: function to reshape the extracted feature maps, in default - a reshape function for vanilla vit;
-8. gpu_batch: batch size the run the prediction for the masked images, in default - 50.
+6. reshape_function: function to reshape the extracted feature maps, in default - a reshape function for vanilla vit;
+7. gpu_batch: batch size the run the prediction for the masked images, in default - 50.
 '''
 ```
 
