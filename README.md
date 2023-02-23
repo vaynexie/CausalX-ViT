@@ -10,9 +10,13 @@ Paper: https://arxiv.org/abs/2211.03064
 We include a requirements.txt file for the specific environment we used to run the code. To run the code, please set up your environment to match that.
 
 **Our Testing Environment**
+
 Python 3.9.16
+
 CUDA  11.6
+
 pytorch 1.13.1+cu116
+
 torchvision 0.14.1+cu116
 
 **Usage Example**
