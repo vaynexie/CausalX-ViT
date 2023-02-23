@@ -65,4 +65,6 @@ def reshape_function_deit_distilled(tensor, height=14, width=14):
 
 In general, the output of this reshape function should be the embeddings for the image patches, in the shape of [number of feature maps, sqrt(number of patches), sqrt(number of patches)].
 
+ ----------------------------------------------------------------------------
  
+ Contact: Vayne Xie (wxieai@cse.ust.hk)
