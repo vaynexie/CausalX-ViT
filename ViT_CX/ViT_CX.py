@@ -66,9 +66,9 @@ def ViT_CX(model,image,target_layer,target_category=None,distance_threshold=0.1,
     model_softmax = model_softmax.cuda()
     for p in model_softmax.parameters():
         p.requires_grad = False
+    y_hat = model_softmax(image)
+    y_hat_1=y_hat.detach().cpu().numpy()[0]
     if target_category==None:
-        y_hat = model_softmax(image)
-        y_hat_1=y_hat.detach().cpu().numpy()[0]
         top_1=np.argsort(y_hat_1)[::-1][0]
         target_category = top_1
     class_p=y_hat_1[target_category]
