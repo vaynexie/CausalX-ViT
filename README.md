@@ -2,7 +2,9 @@
 
 ViT-CX: a tool for making explanations for the ViT image classification.
 
-Paper: https://arxiv.org/abs/2211.03064
+Main Paper: https://arxiv.org/abs/2211.03064
+
+Appendix: https://github.com/vaynexie/CausalX-ViT/blob/main/ViT-CX_Supplementary_Material.pdf 
 
 
 **Requirements**
